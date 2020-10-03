@@ -16,3 +16,6 @@ http://work.megancoyle.com/
 
 - Website portfolio template 
 https://startbootstrap.com/previews/freelancer/
+
+- Deployment(Amazon Web Services)
+https://aws.amazon.com/
