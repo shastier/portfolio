@@ -2,6 +2,23 @@
 Shirley Hastier Portfolio Website
 
 ## Wireframes and user stories
+### API
+#### Projects
+GET api/portfolio/projects
+- Get all projects
+
+GET api/portfolio/projects/:id
+- Get project with that id
+
+GET api/portfolio//projects/categories
+- Get all projects by categories
+
+GET api/portfolio//projects/categories/:id
+- Get all projects by that category
+
+#### Contact Me
+POST api/contact
+- Submit contact form.
 
 ## Technologies used
 - **FrontEnd React**
