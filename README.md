@@ -24,6 +24,12 @@ POST api/contact
 - **FrontEnd React**
 - **Node and Express**
 
+- A user will be able to:
+* Register and post a comment on any project.  
+* Like a project, it will be shown on it's dashboard. 
+* Submit a contact form, it will be shown on it's communication channel.
+* User shastier: will be able to update, add and delete projects / skills
+
 ## References:
 - Showcase work of "Web Creek" technology solutions provider.
 https://www.webcreek.com/en/our-work/ 
