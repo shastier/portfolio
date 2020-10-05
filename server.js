@@ -19,3 +19,29 @@ const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
+
+// Routes
+app.get('/', (req, res) => {
+    res.send('Welcome to my portfolio!');
+});
+
+// const projectRoutes = require('./routes/projects-routes');
+// app.use('/api/portfolio/projects', projectRoutes);
+
+// const contactRoutes = require('./routes/contact-routes');
+// app.use('/api/contact', contactRoutes);
+
+// Error handlers
+app.use('*', (req, res) => {
+    res.status(400).json({
+      message: 'Not found!',
+    });
+  });
+  
+app.use((err, req, res, next) => {
+    console.log(err);
+    res.status(500).json({
+      error: err,
+      message: err.message,
+    });
+});
