@@ -15,7 +15,7 @@ const Header = props => {
                 <h4 class="four">
                     I'm happy to introduce you my latest works. Click the link below!
                 </h4>
-                <a className="btn" href="./#work"> See my work! </a>
+                <a className="btn" href="./#work"> See my projects! </a>
             </div>
         </header>
     )
