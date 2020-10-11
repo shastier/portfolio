@@ -3,10 +3,10 @@ const projectsRoutes = express.Router();
 
 const projectsController = require('../controllers/projects-controller');
 
-// root route, /api/projects
+// root route, /api/portfolio/projects
 projectsRoutes.get('/', projectsController.index);
 
-// show details for an specific project, /api/projects/:id
-projectsRoutes.get('/', projectsController.show);
+// show details for an specific project, /api/portfolio/projects/:id
+projectsRoutes.get('/:id', projectsController.show);
 
 module.exports = projectsRoutes;

@@ -25,8 +25,8 @@ app.get('/', (req, res) => {
     res.send('Welcome to my portfolio!');
 });
 
-// const projectRoutes = require('./routes/projects-routes');
-// app.use('/api/portfolio/projects', projectRoutes);
+const projectsRoutes = require('./routes/projects-routes');
+app.use('/api/portfolio/projects', projectsRoutes);
 
 // const contactRoutes = require('./routes/contact-routes');
 // app.use('/api/contact', contactRoutes);
