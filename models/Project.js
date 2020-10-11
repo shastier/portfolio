@@ -1,8 +1,8 @@
 const db = require('../db/config');
 
 class Project {
-    constructor(name, description, deploy_url, github_url, date, category_id, id) {
-        this.id = id || null;
+    constructor(id, name, description, deploy_url, github_url, date, category_id) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.deploy_url = deploy_url;
