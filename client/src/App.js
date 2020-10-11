@@ -18,7 +18,6 @@ function App() {
       <a
           className="App-link"
           href="https://www.linkedin.com/in/shirley-hastier"
-          target="_blank"
           rel="Linkedin"
         >
           Linkedin
@@ -26,7 +25,6 @@ function App() {
         <a
           className="App-link"
           href="https://github.com/shastier"
-          target="_blank"
           rel="GitHub"
         >
           GitHub

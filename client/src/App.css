@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-header {  
@@ -7,12 +8,51 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #1abc9c;
+  background: #51e2f5;
   font-size: calc(10px + 2vmin);
   color:whitesmoke;
   min-height: 100vh;
-  background: linear-gradient(#1abc9c, #5ac5d1);
-  letter-spacing: 1px;
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  letter-spacing: 1px;  
+}
+
+.slogan {
+  display: flex;   
+}
+
+.slogan p {
+  font-weight: bold;
+  font-size: 2.5em;    
+  text-transform: capitalize;  
+  text-shadow: 1px 1px #0c0b0a;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #444444;
+  min-width: 100vw;
+  min-height: 500px;
+  margin-bottom: 25px;
+}
+
+.accent {
+  color: #38FF12;
+}
+
+.one {
+  animation: transitionIn 1s;
+}
+.two {
+  animation: transitionIn 2s;
+}
+.three {
+  animation: transitionIn 3s;
+}
+
+.four {
+  animation: transitionIn 4s;
 }
 
 .btn {
@@ -25,16 +65,17 @@
   border: 1px solid #eee;  
   border-radius: 25px;
   text-decoration: none;  
-  color: #1c4d25;  
+  color: #444444;  
   letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .btn:hover {
   background-color: #c5a688;  
   font-weight: bold;
   letter-spacing: 1px;
-  color: whitesmoke;
-  background: linear-gradient(#c5a688, #74452d);
+  color: rgb(245, 245, 245);
+  background: linear-gradient(#51e2f5, #5ac5d1);
 }
 
 .main-view {
@@ -53,4 +94,16 @@
   height: 100%;
   width: 100%;
   margin-top: 25px;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);    
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);    
+  }
 }
