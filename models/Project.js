@@ -13,7 +13,14 @@ class Project {
     
     static getAll() {
       return db
-        .manyOrNone('SELECT * FROM projects ORDER BY id ASC')
+        .manyOrNone(`SELECT projects.id, projects.name, projects.description,
+                        projects.deploy_url,
+                        projects.github_url,                        
+                        projects.date,
+                        project_images.img_url
+                      FROM projects 
+                        JOIN project_images
+                        ON  projects.id = project_images.project_id;`)
         .then((projects) => {
           return projects.map((project) => {
             return new this(project);
