@@ -1,38 +1,135 @@
 .App {
-  text-align: center;
+  text-align: center;  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App-header {  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: #51e2f5;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color:whitesmoke;
+  min-height: 100vh;
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  letter-spacing: 1px;  
 }
 
-.App-link {
-  color: #61dafb;
+.slogan {
+  display: flex;   
 }
 
-@keyframes App-logo-spin {
+.slogan p {
+  font-weight: bold;
+  font-size: 2.5em;    
+  text-transform: capitalize;  
+  text-shadow: 1px 1px #0c0b0a;
+}
+
+.hello {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: #444444;
+  min-width: 100vw;
+  min-height: 500px;
+  margin-bottom: 25px;
+}
+
+.accent {
+  color: #38FF12;
+}
+
+.one {
+  animation: transitionIn 1s;
+}
+.two {
+  animation: transitionIn 2s;
+}
+.three {
+  animation: transitionIn 3s;
+}
+
+.four {
+  animation: transitionIn 4s;
+}
+
+.btn {
+  width: 20vw;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;  
+  border-radius: 25px;
+  text-decoration: none;  
+  color: #444444;  
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(245, 245, 245);
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  text-shadow: 1px 1px #444444;
+}
+
+.works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;  
+  font-size: calc(10px + 2vmin);  
+  min-height: 100vh;  
+  letter-spacing: 1px;  
+}
+
+.navbar {
+  min-width: 100vw;
+  min-height: 80px;
+  background-color: #5ac5d1;     
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar li {
+  display: inline;
+  margin: 20px;
+  padding: 20px;  
+}
+
+.navbar li a {
+  color:whitesmoke;  
+  padding: 30px;  
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;  
+}
+
+.navbar li a.active {
+  color: #38FF12;
+  background: linear-gradient(#51e2f5, #5ac5d1);  
+  text-shadow: 1px 1px #444444;
+}
+
+.navbar li a:hover:not(.active) {
+  color: rgb(245, 245, 245);
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  text-shadow: 1px 1px #444444;
+}
+
+@keyframes transitionIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(-50px);    
   }
+
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);    
   }
 }

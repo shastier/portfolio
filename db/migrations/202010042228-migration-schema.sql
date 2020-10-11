@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS technologies_used (
   comfort_level NUMERIC DEFAULT 0,
 	technology_id INTEGER NOT NULL,
   project_id INTEGER NOT NULL,
-  FOREIGN KEY (skill_id) REFERENCES skills(id),
+  FOREIGN KEY (technology_id) REFERENCES technologies(id),
   FOREIGN KEY (project_id) REFERENCES projects(id)
 );
 
