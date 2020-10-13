@@ -159,8 +159,16 @@
   text-shadow: 1px 1px #444444;
 }
 
-.project-content:hover {
+.project-content-active {
   color: #38FF12;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -1.50%;    
+  font-weight: bold;
+  letter-spacing: 1px;
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  text-shadow: 1px 1px #444444;
 }
 
 @keyframes transitionIn {
