@@ -136,17 +136,31 @@
 
 .project-img {
   max-height: 500px;
-  max-width: 500px;
+  max-width: 500px;  
+  object-fit: cover;
 }
 
 .project-img:hover {
   max-height: 700px;
   max-width: 700px;
-  cursor: pointer;
+  cursor: pointer;    
+  transition: .8s ease;
 }
 
-.project-content {
-  background: linear-gradient(rgb(164, 229, 255,1), rgba(0, 165, 0, .4));
+.project-content {    
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -1.50%;    
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: rgb(245, 245, 245);
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  text-shadow: 1px 1px #444444;
+}
+
+.project-content:hover {
+  color: #38FF12;
 }
 
 @keyframes transitionIn {
