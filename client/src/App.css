@@ -122,6 +122,33 @@
   text-shadow: 1px 1px #444444;
 }
 
+/* Projects  */
+.projects {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.project {
+  width: 200;
+  height: 200;    
+}
+
+.project-img {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.project-img:hover {
+  max-height: 700px;
+  max-width: 700px;
+  cursor: pointer;
+}
+
+.project-content {
+  background: linear-gradient(rgb(164, 229, 255,1), rgba(0, 165, 0, .4));
+}
+
 @keyframes transitionIn {
   from {
     opacity: 0;

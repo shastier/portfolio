@@ -39,7 +39,7 @@ class Works extends Component {
             <div className="works" id="work">
                 <Navbar />
                 <p>"Here is my work"</p>
-                <div className="row">
+                <div className="projects">
                     {this.renderWorks()}
                 </div>
             </div>
