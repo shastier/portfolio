@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-import Navbar from './Navbar';
 import Work from './Work';
 
 class Works extends Component {
@@ -37,7 +36,6 @@ class Works extends Component {
     render() {
         return(
             <div className="works" id="work">
-                <Navbar />
                 <p>"Here is my work"</p>
                 <div className="projects">
                     {this.renderWorks()}

@@ -85,14 +85,17 @@
   font-size: calc(10px + 2vmin);  
   min-height: 100vh;  
   letter-spacing: 1px;  
+  top: 160px;
 }
 
 .navbar {
   min-width: 100vw;
-  min-height: 80px;
+  min-height: 60px;
   background-color: #5ac5d1;     
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
 }
 
 .navbar li {
