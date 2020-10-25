@@ -6,20 +6,33 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Works from './components/Works';
 import About from './components/About';
+import Contact from './components/Contact';
 import { Component } from 'react';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      page: null,
-    }    
+      page: 'work',
+    };
+    this.changePage = this.changePage.bind(this);    
+  }
+
+  changePage(page) {
+    this.setState({
+      page: page,
+    });
   }
 
   renderMainView() {
-    return(
-      <Works />
-    )
+    switch (this.state.page) {
+      case 'work':
+        return<Works />        
+      case 'about':
+        return <About page={this.changePage}/>
+      default:
+        break;
+    }    
   }
 
   render() {
@@ -31,6 +44,8 @@ class App extends Component {
         <div className="App-main-view">
           {this.renderMainView()}
         </div>
+        <About />
+        <Contact />
         </body>
         <footer>
           <a
