@@ -22,7 +22,7 @@ const Contact = props => {
                     rel="Linkedin"
                     target="_blank"
                 >
-                    Linkedin
+                    <img src="https://i.imgur.com/N630r54.png" alt="LinkedIn" />
                 </a>
                 <a
                     className="App-link"
@@ -30,9 +30,12 @@ const Contact = props => {
                     rel="GitHub"
                     target="_blank"
                 >
-                    GitHub
+                    <img src="https://i.imgur.com/gAc4UD4.png" alt="GitHub" />
                 </a>
+                
+                
             </div>
+            <span className="footer"> Site by: shastier 2020</span>
         </div>        
     )
 };

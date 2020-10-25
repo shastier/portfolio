@@ -223,6 +223,36 @@ form input[type=submit]:hover, .wine-btn:hover, form input[type=submit]:focus, .
   cursor: pointer;  
 }
 
+/* Outside-links */
+.outside-links {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+}
+
+.outside-links a {
+  display: flex;
+}
+
+.footer {
+  min-width: 100vw;
+  min-height: 40px;
+  background-color: black;     
+  display: flex;
+  justify-content: center;
+}
+
+.footer span {
+  display: flex;
+}
+
+#contact {  
+  background: whitesmoke;
+  color: #444444;
+}
+
 @keyframes transitionIn {
   from {
     opacity: 0;
