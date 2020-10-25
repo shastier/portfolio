@@ -174,6 +174,55 @@
   text-shadow: 1px 1px #444444;
 }
 
+/* Forms */
+
+form {
+  width: 50vw;
+  padding: 50px;
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #eee;
+}
+
+form input, textarea {
+  border-bottom: 3px solid green;
+  font-size: 1.5em;
+  font-family: poppins, sans-serif;
+  margin: 18px 0;
+  padding: 5px;
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+  text-align: center;
+}
+
+form input:focus, textarea:focus {
+  border-bottom: 3px solid #933721;
+  outline: 0;
+}
+
+form input[type=submit], .wine-btn {
+  background: linear-gradient(#51e2f5, #5ac5d1);
+  display: block;
+  margin: auto;
+  padding: 10px 30px;
+  font-size: 1.5em;
+  color: white;
+  font-weight: 900;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form input[type=submit]:hover, .wine-btn:hover, form input[type=submit]:focus, .wine-btn:focus {
+  outline: 0;
+  background: linear-gradient(#51e2f5, #2fc066);
+  text-shadow: 1px 1px #444444;
+  cursor: pointer;  
+}
+
 @keyframes transitionIn {
   from {
     opacity: 0;

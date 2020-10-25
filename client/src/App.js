@@ -44,26 +44,10 @@ class App extends Component {
         <div className="App-main-view">
           {this.renderMainView()}
         </div>
-        <About />
-        <Contact />
+          <About />        
         </body>
-        <footer>
-          <a
-            className="App-link"
-            href="https://www.linkedin.com/in/shirley-hastier"
-            rel="Linkedin"
-            target="_blank"
-          >
-            Linkedin
-          </a>
-          <a
-            className="App-link"
-            href="https://github.com/shastier"
-            rel="GitHub"
-            target="_blank"
-          >
-            GitHub
-          </a>
+        <footer id="contact">
+          <Contact />          
         </footer>
       </div>
     );
